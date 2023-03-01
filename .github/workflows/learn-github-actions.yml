@@ -7,7 +7,7 @@ jobs:
     steps:
       - run: mkdir bert
       - name: Download a file tf_model.h5
-        run: wget https://huggingface.co/bert-base-cased/blob/main/tf_model.h5 -O bert/tf_model.h5
+        run: wget https://huggingface.co/bert-base-cased/resolve/main/tf_model.h5 -O bert/tf_model.h5
       - name: Download a file pytorch_model.bin 
         run: wget https://huggingface.co/bert-base-cased/resolve/main/pytorch_model.bin -O bert/pytorch_model.bin 
       - uses: actions/upload-artifact@v3
